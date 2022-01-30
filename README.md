@@ -4,10 +4,14 @@ The project is a work done within the scope of term paper. Within the scope of t
 (Backend services, mockups and requirement analysis were created by my group friend. I just wanted to include my own work in this repository.)
 
 
-You can find the story board and images of the project below.The application was developed in Turkish language.
+You can find the story board, functional decomposition and images of the project below.The application was developed in Turkish language.
 
 ![image](https://user-images.githubusercontent.com/34946067/151701909-7de3553d-fb3d-4d2f-9e27-82612e2d3bbd.png)
 
+
+FUNCTIONAL DECOMPOSITION
+
+![image](https://user-images.githubusercontent.com/34946067/151702429-5b3e6fad-222b-46b5-be89-170f48cf385e.png)
 
 
 APPLICATION IMAGES
