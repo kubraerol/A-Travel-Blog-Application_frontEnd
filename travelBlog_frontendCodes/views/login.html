@@ -1,0 +1,73 @@
+<script src="/libraries/jquery-3.5.1.js"></script>
+<html>
+<head>
+    <title> Seyahat Uygulaması </title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">   
+</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <body>
+    <div class="login-box" id="idSignIn">
+        <img src="/images/avatar.png" class="avatar">
+        <h1>Üye Girişi</h1>
+            <form>
+            <p>E-posta:</p>
+            <input type="text" name="usermail" >
+            <p>Parola:</p>
+            <input type="password" name="password" >
+            <input type="button" name="submit" value="Giriş Yap" onclick="onClickLogin()">
+            <a href="#" type="forgotPassword">Şifremi Unuttum</a>
+        
+            <ul id="aboutLogin">
+               <li><a href="#" type="notAMember" onclick="onClickSignUp()">Üye Ol</a></li>
+               <li><a href="#" type="notAMember" onclick="navigateToHomePage('continueWithoutMembership')">Üye Olmadan Devam Et</a> </li>
+            </ul>
+            </form>
+        
+    </div>
+        
+    <div class="signup-box" id="idSignUp">
+        <img src="/images/avatar.png" class="avatar">
+        
+        <div class="visiterSignUpForm">Okuyucu</div>
+        <div class="travellerSignUpForm">Gezgin</div>
+        
+        <div class="travellerSignUpForm-form">
+        
+         <p>Adınız: </p>
+            <input type="text" name="name" >
+            <p>Soyadınız:</p>
+            <input type="text" name="surname" >
+            <p>E-posta:</p>
+            <input type="text" name="username" >
+            <p>Şifreniz:</p>
+            <input type="password" name="password1" >
+            <p>Şifre (Tekrar):</p>
+            <input type="password" name="password2" >
+            <input class ="submit" type="button" name="submit" value="Tamamla" onclick="onClickSubmit('visiter')">
+            <input class="continue" type="button" name="continue" value="Devam Et" onclick="onClickContinue()">
+         
+       </div>
+         
+        
+    </div>
+        
+    <div class="signupProfil-box" id="idSignUpProfile">
+        <img src="/images/avatar.png" class="avatar">
+        <h1>Profil Oluştur</h1>
+            <form>
+            
+            <button id="idResim" class="addProfilImage" name="button" >Profil Resmi Ekle</button>
+            <p>Ön Yazı:</p>
+            <textarea id="idHakkında" name="hakkında" rows="8" cols="33">
+  
+            </textarea>
+        
+            <input class ="save" type="button" name="save" value="Kaydet" onclick="onClickSubmit('traveller')">
+            </form>
+        
+    </div>
+        
+    <script src="/controllers/loginController.js"></script>
+        
+    </body>
+</html>

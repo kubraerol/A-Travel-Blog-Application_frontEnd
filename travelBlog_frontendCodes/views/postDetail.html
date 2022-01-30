@@ -1,0 +1,154 @@
+<script src="/libraries/jquery-3.5.1.js"></script>
+<html>
+<head>
+    <title> Seyahat Uygulaması Anasayfa </title>
+    <link rel="stylesheet" type="text/css" href="/styles/postDetailStyle.css"> 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <body>
+        <div class="header">
+            <div class="usersButton">
+             <a class="signInButton">Giriş Yap / Kaydol</a>
+             <a class="messagesButton"><i class="fas fa-envelope"></i></a>
+             <a class = "userSettingsButton"><i class="fas fa-user"></i></a>
+            <br>
+            <br>
+             <a class = "newPostButton" onclick="onClickNewPost()"><i class="fas fa-pen"></i>Düzenle</a>
+        </div>
+
+        <h1><span><i class="fas fa-home" onclick="onClickHomePage()"></i></span> Ana Sayfa</h1>
+     <div class="header_resize">
+    <!--  <div class="logo">
+        <h1><a href="index.html"><small>put your slogan here</small>Blue<span>Prism</span></a></h1>
+      </div>-->
+      <div class="clr"></div>
+          
+    </div>
+    <div class="clr"></div>
+ </div>
+     <div class ="viewingPosts">
+         <div class = "info">
+             <span>
+                 <label class="infoLabels">Ülke:</label>
+                 <label class="infoValues" id= "idCountry"></label></span>
+             <br>
+             <br>
+             <span>
+                 <label class="infoLabels">Şehir:</label>
+                 <label class="infoValues" id= "idCity"></label></span>
+             <br>
+             <br>
+             <span>
+                 <label class="infoLabels">Kategori:</label>
+                 <label class="infoValues" id= "idCategory"></label></span>
+             <br>
+             <br>
+             <br>
+             <br>
+             <span>
+                 <label class="infoValues" id= "idTitle"></label></span>
+             <br>
+             <br>
+             <span>
+         
+                 <label class="infoValues" id= "idArticle"></label></span>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             
+             
+             <div class= "images">
+             <a href="#"><img src="/images/laSpezia.jpg" alt="" /> </a>
+             <a href="#"><img src="/images/geziImage.jpg" alt="Gezgin"/> </a>
+             <a href="#"><img src="/images/nature.jpg" alt="Gezgin"/> </a>
+             <a href="#"><img src="/images/geziImage2.jpg" alt="Gezgin"/> </a>
+         </div>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             Comment yapısı eksik
+        </div>
+            
+        <div class= "image">
+              <a href="#"><img src="/images/gezgin.jpg" alt="Gezgin"/> </a>
+
+         </div>
+         <br>
+
+        <a href="#"><label class="infoValues" id= "idTraveller"></label></a> 
+         <br>
+         <input type="button" class="button"  id="save-button" value="Mesaj Gönder" /> 
+         <div class="advices">
+             <table id="idAdvicesTable">
+               <tbody id="myTable">
+                     <tr >
+                         <th>Tavsiye Türü</th>
+                         <th>Ad</th>
+                         <th>Link</th>
+                   </tr>
+                   <tr w3-repeat="advices">
+                       <td>Otel</td>
+                       <td>LaSpezia</td>
+                       <td><a href="#">www.laspeziahotel.com</a></td>
+                   </tr>
+                    <tr w3-repeat="advices">
+                       <td>Restaurant</td>
+                       <td>Pastificcio</td>
+                       <td><a href="#">www.pastificio.com</a></td>
+                   </tr>
+                    <tr w3-repeat="advices">
+                       <td>Restaurant</td>
+                       <td>Pompi</td>
+                       <td><a href="#">www.pompi.com</a></td>
+                   </tr>
+                    <tr w3-repeat="advices">
+                       <td>Gezilecek yer</td>
+                       <td>Trastevere</td>
+                       <td><a href="#"></a></td>
+                   </tr>
+                    <tr w3-repeat="advices">
+                       <td>Gezilecek yer</td>
+                       <td>Kolezyum</td>
+                       <td><a href="#"></a></td>
+                   </tr>
+                   <tr w3-repeat="advices">
+                       <td>Gezilecek yer</td>
+                       <td>Aşk Çeşmesi</td>
+                       <td><a href="#"></a></td>
+                   </tr>
+                 </tbody>
+             </table>
+         </div>
+        
+         
+    </div>
+    
+           
+            
+         
+        
+        
+        
+        <footer>
+                
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+</footer>
+           
+        </div>
+        
+            <script src="/controllers/postDetailController.js"></script>
+    </body>
+</html>

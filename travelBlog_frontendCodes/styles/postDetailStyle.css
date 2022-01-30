@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.header_resize {
+	margin:0 auto;
+	padding:0;
+	width:970px;
+}
+.header {
+	margin:0;
+	padding:60;
+	background:url(/images/header2.jpg) top center repeat-x;
+}
+
+.viewingPosts{
+    width: 80%;
+    height: 100%;
+    margin-top: 6%;
+   /* color: #D2D5D8;*/
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    background-color: #fff;
+}
+
+
+.usersButton{
+    margin-top: 20px;
+    text-align: end;
+    margin-right: 20px;
+}
+.signInButton:hover{
+    cursor: pointer;
+    color: #1eafed;
+}.newPostButton:hover{
+    cursor: pointer;
+    color: #1eafed;
+}.messagesButton:hover{
+    cursor: pointer;
+    color: #1eafed;
+}.userSettingsButton:hover{
+    cursor: pointer;
+    color: #1eafed;
+}
+
+h1{
+    margin: 0;
+   
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.info{
+
+    width: 60%;
+    float: left;
+    
+}
+
+.infoLabels {
+    margin: 20;
+    padding: 0;
+    font-weight: bold;
+    width: 10%;
+}
+.infoValues{
+    margin: 20;
+    padding: 0;
+    padding: 10;
+}
+
+.viewingPosts p{
+    margin: 20;
+    padding: 0;
+    font-weight: bold;
+    width: 10%;
+}
+
+.viewingPosts img{
+  margin-left: 30px;
+ 
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+}
+
+.image{
+
+  margin-left: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.image img {
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.advices{
+    padding: 70px 30px;
+    text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+
+ .button {
+	background: #E27575;
+	border: none;
+	padding: 10px 25px 10px 25px;
+	color: #FFF;
+	box-shadow: 1px 1px 5px #B6B6B6;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #9E3F3F;
+	cursor: pointer;
+ float: center;
+    
+}
+.button:hover {
+    background: #CF7A7A
+}

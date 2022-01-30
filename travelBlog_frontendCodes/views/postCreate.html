@@ -1,0 +1,156 @@
+<script src="/libraries/jquery-3.5.1.js"></script>
+<html>
+<head>
+    <title> Seyahat Uygulaması Anasayfa </title>
+    <link rel="stylesheet" type="text/css" href="/styles/postCreateStyle.css"> 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <body>
+       <!-- <div class="usersButton">
+            
+             <a class="messagesButton"><i class="fas fa-envelope"></i></a>
+             <a class = "userSettingsButton"><i class="fas fa-user"></i></a>
+            <br>
+            <br>
+          
+        </div>
+            
+        <h1><span><i class="fas fa-home"></i></span> Ana Sayfa</h1>-->
+        <div class="header">
+            <div class="usersButton">
+             <a class="signInButton">Giriş Yap / Kaydol</a>
+             <a class="messagesButton"><i class="fas fa-envelope"></i></a>
+             <a class = "userSettingsButton"><i class="fas fa-user"></i></a>
+            <br>
+            <br>
+             <a class = "newPostButton" onclick="onClickNewPost()"><i class="fas fa-pen"></i>Yeni Post Ekle</a>
+        </div>
+
+        <h1><span><i class="fas fa-home"></i></span> Ana Sayfa</h1>
+     <div class="header_resize">
+    <!--  <div class="logo">
+        <h1><a href="index.html"><small>put your slogan here</small>Blue<span>Prism</span></a></h1>
+      </div>-->
+      <div class="clr"></div>
+          
+    </div>
+    <div class="clr"></div>
+       
+           <form action="" method="post" class="basic-grey">
+    <h1>Yeni Seyahatim
+    	
+    </h1>
+    <label>
+    	<span>Ülke :</span>
+        <select id="country">
+            <option value="">Ülke seçiniz</option>
+            <option value="Türkiye">Türkiye</option>
+            <option value="Fransa">Fransa</option>
+            <option value="Almanya">Almanya</option>
+			<option value="Italya">Italya</option>
+            <option value="Diğer">Diğer</option>
+        </select>
+      <!--  <input id="country""text" name="name" placeholder="Your Full Name" />-->
+    </label>
+    
+    <label>
+    	<span>Şehir :</span>
+        <select id="city">
+            <option value="">Şehir seçiniz </option>
+            <option value="İzmir">İzmir</option>
+             <option value="Antalya">Antalya</option>
+             <option value="Nevşehir">Nevşehir</option>
+            <option value="Gaziantep">Gaziantep</option>
+             <option value="Muğla">Muğla</option>
+			<option value="Roma">Roma</option>
+			<option value="Berlin">Berlin</option>
+			<option value="Paris">Paris</option>
+            <option value="Diğer">Diğer</option>
+        </select>
+        <!--<input id="city"pe="email" name="email" placeholder="Valid Email Address" />-->
+    </label>
+    <label>
+    	<span>Kategori :</span>
+       <!-- <input id="text"ame="name" placeholder="Your Full Name" />  -->
+        <select id="category">
+        <option value="">Kategori seçiniz</option>
+                     <option value="Doğa">Doğa</option>
+                     <option value="Kültür">Kültür</option>
+                     <option value="Eğlence">Eğlence</option>
+                     <option value="Deniz">Deniz</option>
+                     <option value="Kış">Kış</option>
+                     <option value="Diğer">Diğer</option>
+        </select>
+     
+    </label>
+    
+    <label>
+    	<span>Başlık :</span>
+        <input id="title" type="email" name="title" placeholder="Paylaşımınız için bir başlık belirleyiniz." />
+    </label>
+    <label>
+    	<span>Yazı :</span>
+        <textarea id="text" name="text" placeholder="Yazınızı Giriniz"></textarea>
+    </label> 
+     <label>
+    	<span>Resim :</span><a class="images"><i class="fas fa-images"></i></a>Ekle
+    </label>  
+               <br>
+               <br>
+    
+    <label>
+    	<span>Otel Tavsiyesi :</span>
+        <input id="title" type="email" name="title" placeholder="Okuyucularınızla bu gezideki favori otelinizi paylaşın" />
+    </label>
+    <label>
+    	<span>Gezilecek Yer Tavsiyesi :</span>
+        <input id="title" type="email" name="title" placeholder="Okuyucularınızla bu gezideki favori gezi yerini paylaşın" />
+    </label> 
+     <label>
+         <span>Restaurant Tavsiyesi :</span>
+    	<input id="title" type="email" name="title" placeholder="Okuyucularınızla bu gezideki favori restoranı paylaşın" />
+    </label>          
+    
+               
+      <!--         <div class="tavsiyeler">
+                   
+                   
+                       <span>Gezilecek Yer Tavsiyesi :</span>
+                   <input>
+                       <a class="images"><i class="fas fa-plus"></i>Ekle</a>
+                  <br>
+                  <br>
+                 
+                       <span>Restaurant Tavsiyesi :</span>
+                    <input>
+                       <a class="images"><i class="fas fa-plus"></i>Ekle</a>
+                  <br>
+                  <br>
+                       <span>Otel Tavsiyesi :</span>
+                    <input>
+                       <a class="images"><i class="fas fa-plus"></i>Ekle</a>
+                 <br>
+                  <br>
+                
+                  
+               </div>-->
+               <div id='save'>
+                   <label>
+    	           <span> </span> 
+                   <input type="button" class="button"  id="save-button" value="Kaydet" /> 
+                </label>  
+               </div>
+                  
+               <br>
+               <br>
+               
+               
+</form>
+      
+           
+        
+            <script src="/controllers/postCreateController.js"></script>
+    </body>
+</html>

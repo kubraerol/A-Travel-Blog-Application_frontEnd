@@ -1,0 +1,141 @@
+<script src="/libraries/jquery-3.5.1.js"></script>
+<html>
+<head>
+    <title> Seyahat Uygulaması Anasayfa </title>
+    <link rel="stylesheet" type="text/css" href="/styles/homePageStyle.css"> 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <body>
+        <div class="header">
+            <div class="usersButton">
+             <a class="signInButton">Giriş Yap / Kaydol</a>
+             <a class="messagesButton"><i class="fas fa-envelope"></i></a>
+             <a class = "userSettingsButton"><i class="fas fa-user"></i></a>
+            <br>
+            <br>
+             <a class = "newPostButton" onclick="onClickNewPost()"><i class="fas fa-pen"></i>Yeni Post Ekle</a>
+        </div>
+
+        <h1><span><i class="fas fa-home" onclick=onClickHomePage()></i></span> Ana Sayfa</h1>
+    <div class="header_resize">
+    <!--  <div class="logo">
+        <h1><a href="index.html"><small>put your slogan here</small>Blue<span>Prism</span></a></h1>
+      </div>-->
+      <div class="clr"></div>
+     
+      
+    </div>
+    <div class="clr"></div>
+  </div>
+        
+     
+        <div class="viewingPosts" >
+            <div class ="filters">
+             
+                <br><br>
+                 <label class="filtersLabel">Ülke seç:</label>
+                 <select id="countries" class="filterSelection" >
+                     <option value=""></option>
+                     <option value="Türkiye">Türkiye</option>
+                     <option value="Fransa">Fransa</option>
+                     <option value="Almanya">Almanya</option>
+					 <option value="Italya">Italya</option>
+                     <option value="Diğer">Diğer</option>
+                </select>
+                
+                <label class="filtersLabel">Şehir seç:</label>
+                 <select id="cities" class="filterSelection" >
+                     <option value=""></option>
+                     <option value="İzmir">İzmir</option>
+                     <option value="Antalya">Antalya</option>
+                     <option value="Nevşehir">Nevşehir</option>
+                     <option value="Gaziantep">Gaziantep</option>
+                     <option value="Muğla">Muğla</option>
+					 <option value="Roma">Roma</option>
+					 <option value="Berlin">Berlin</option>
+					 <option value="Paris">Paris</option>
+                     <option value="Diğer">Diğer</option>
+                </select>
+                
+               
+                <label class="filtersLabel">Gezgin seç:</label>
+                 <select id="travellers" class="filterSelection" >
+                     <option value=""></option>
+                     <option value="Ali Ali">Ali Ali</option>
+					 <option value="Mehmet Yılmaz">Mehmet Yılmaz</option>
+					 <option value="Ahmet Aydın">Ahmet Aydın</option>
+					 <option value="sevda bursa">sevda bursa</option>
+                     <option value="Diğer">Diğer</option>
+                </select>
+                
+                <label class="filtersLabel" >Kategori seç:</label>
+                 <select id="categories" class="filterSelection" >
+                     <option value=""></option>
+                     <option value="Doğa">Doğa</option>
+                     <option value="Kültür">Kültür</option>
+                     <option value="Eğlence">Eğlence</option>
+                     <option value="Deniz">Deniz</option>
+                     <option value="Kış">Kış</option>
+                     <option value="Diğer">Diğer</option>
+                </select>
+               
+                <button onclick = "onClickSearch()">Ara</button>
+            </div> 
+            <div class ="posts">
+                <table id="idPostsTable">
+                    <thead>
+                     
+                    <a href="#" type="listBy" onclick="onClickListByCreatedDate()">En Yeni Eklenene Göre Sırala</a>
+                    
+                    <a href="#" type="listBy" onclick="onClickListByLikeNumber()">En Çok Beğenilene Göre Sırala</a>
+                       
+                    <a href="#" type="listBy" onclick="onClickListByReadMumber()">En Çok Okunana Göre Sırala</a>
+           
+                    </thead>
+                  
+                      <tbody id="myTable">
+                        <tr w3-repeat="posts">
+                            <td>
+                                <div class="blog-entry">
+                                    <span><i class="fas fa-file-alt"></i>Kategori: {{Category}}</span>
+                                    
+                                    <div class="blog-entry-title" onclick="navigateToPostDetailPage({{TravelId}})">
+                                        {{Title}}
+                                    </div>
+                                    <div class= "blog-entry-image">
+                                        <a href="login.html" class="img img-2" style="background-image: url(/images/laSpezia.jpg);"></a>
+                                    </div>
+                                    <div class="blog-entry-detail">
+                                        <p >{{summaryOfPost}}.</p>
+                                        <p><a href="#" class="btn-custom" onclick="navigateToPostDetailPage({{TravelId}})">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                                    </div>
+                                    
+                                    <div class="blog-entry-info">                                          
+                                        <span><i class="fas fa-calendar-alt"></i>{{Date}}</span>
+                                         <span><i class="fas fa-eye"></i>{{viewNumber}}</span>
+		              		           <span><i class="fas fa-thumbs-up"></i>{{LikeNumber}}</span>	               
+                                    </div>
+                                </div>  
+                            </td>                          
+                        </tr>
+                    </tbody>                    
+                </table>
+            </div>
+            
+            <footer>
+                
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+</footer>
+           
+        </div>
+        
+            <script src="/controllers/homePageController.js"></script>
+    </body>
+</html>
